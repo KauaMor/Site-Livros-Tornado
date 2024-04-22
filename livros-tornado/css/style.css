@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(../img/tornados.jfif);
+    backdrop-filter: blur(10px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+.header {
+    color: goldenrod;
+    background: #a11b1b;
+    border-top: 10px solid darkgoldenrod;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.header h1 {
+    margin: 0;
+}
+.nav {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav li {
+    margin: 0 10px;
+}
+.nav a {
+    text-decoration: none;
+    color: #f8f9fa;
+    transition: 1.2s;
+}
+
+.nav a:hover{
+    text-decoration: none;
+    transform: 1.2s;
+    color: goldenrod;
+}
+
+
+.product-container {
+    text-align: justify;
+    padding-right: 10px;
+    border-radius: 20px;
+    color: #f8f9fa;
+    background-color: #0a0a0a;
+    margin-bottom: 20px;
+}
+
+.new-section {
+    text-align: justify;
+    border-radius: 20px;
+    background-color: cornsilk;
+    margin-bottom: 20px;
+}
+
+.new-section p{
+    color: darkgoldenrod;
+    font-size: 20px;
+}
+
+.product-container-sobre {
+    font-size: 18px;
+    text-align: justify;
+    margin-left: 2px;
+    margin-right: 10px;
+    border-radius: 20px;
+    color: #f8f9fa;
+    background-color: #0a0a0a;
+    margin-bottom: 20px;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    background-color: #e9ecef;
+}
+
+ /* index */
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/tornados.jfif);
+    background-repeat: no-repeat;
+    background-size: cover; /* A imagem preencherá a tela inteira */
+    background-position: center top; /* Mostra o foco e direção da imagem */
+}
+
+.cont {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    color: aliceblue;
+    font-size: 26px;
+    padding: 1%;
+}
+
+#dizer{
+    border-radius: 20px;
+    background-color: cornsilk;
+    text-align: justify;
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-top: 2%;
+    font-size: 24px;
+}
+.cont h1{
+    color: gold;
+}
+
+#dizer p{
+    color: #a11b1b;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+    }
+    .nav {
+        margin-top: 20px;
+    }
+    .contact-info {
+        flex-direction: row;
+        justify-content: space-around;
+        list-style-type: none;
+        margin: 0;
+        padding: 20px;
+        background-color: #e9ecef;
+    }
+}
